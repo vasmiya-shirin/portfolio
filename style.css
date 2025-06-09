@@ -1,0 +1,323 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 11;
+    background: transparent;
+    transition: 0.3s background;
+}
+
+.navbar-brand {
+    font-size: 700;
+    color: rgb(17, 16, 16);
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.nav-link {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-link:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    width: 0;
+    height: 2px;
+    background: rgb(75, 161, 189);
+    transition: ease all 0.3s;
+}
+
+.nav-link:hover {
+    color: rgb(80, 126, 165);
+}
+
+.nav-link:hover:after {
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+@media (max-width:991px) {
+    .navbar-collapse {
+        border-bottom: 2px solid darkgray;
+        border-top: 2px solid darkgray;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+    }
+
+    .navbar-nav li {
+        border-top: 1px solid rgba(55, 55, 55, 0.1);
+    }
+
+    .nav-link {
+        line-height: 50px;
+    }
+
+    .nav-link:after {
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        padding: 4px 9px;
+        outline: none;
+        box-shadow: none;
+    }
+
+    .navbar-toggler span .navbar-toggler-icon {
+        width: 25px;
+        height: 2px;
+        background: darkgray;
+        margin: 4px 0;
+        transition: 0.3s;
+    }
+    
+}  
+
+.btn {
+    padding: 8px 20px;
+    border: 1px solid black;
+    font-size: 14px;
+    line-height: 1.5;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: ease all 0.3s;
+    display: inline-block;
+    background:tomato;
+    color:white;
+    box-shadow: 5px 5px 0 0 lightsalmon;
+}
+
+.btn:hover {
+    color:white;
+    background: orange;
+    border-color: black;
+    box-shadow: 5px 5px 0 0 lightgray;
+}
+.bg-gray{
+    background-color: lightgray;
+}
+.home-section .home-intro h5 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color:black;
+}
+ .home-section .home-intro h2 {
+    font-size: 50px;
+    font-weight: 600;
+    color:black;
+    line-height: 1;
+}
+ .home-section .home-intro h2 span{
+    color: brown;
+ }
+ .home-image img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 2px solid lightgray;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+.about h2 {
+    text-align: center;
+    font-weight: 700;
+    font-weight: bold;
+    text-decoration: underline;
+    color: chocolate;
+}
+.about h5 {
+    text-align: center;
+    font-weight: 600;
+    color:chocolate;
+    text-decoration: underline;
+}
+
+.about ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills .col-lg-3{
+    padding:20px;
+    display: flex;
+}
+.skills .card:hover{
+    box-shadow: 3px 3px 0 0 teal;
+}
+.skills h2{
+    text-align: center;
+    font-weight: 700;
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+    
+}
+.skills h4{
+    font-weight: 600;
+    color:white;
+    padding-top: 50px;
+    text-decoration: underline;
+}
+.skills h5{
+    font-weight: 600;
+    color:white;
+    padding-top: 50px;
+}
+.skills .card-body h5{
+   color: black; 
+}
+.skills .col-lg-4{
+     padding:30px;
+     display: flex;
+     align-items: center;
+}
+.portfolio img{
+   position: relative;
+   border: 2px solid black;
+   box-shadow: 0 0 0 0 black;
+   transition: 0.3s;
+   
+}
+.portfolio img:hover{
+    box-shadow: 2px 2px 0 0 black;
+}
+.portfolio .portfolio-info h4{
+    color: brown;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.contact-form h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+}
+.contact-form{
+    border: 2px solid black;
+    padding: 35px;
+    background: white;
+     margin-bottom: 40px;
+}
+@media(max-width:767px){
+    .contact-form{
+        padding: 25px;
+    }
+}
+ .form-control{
+    border-radius: 0%;
+    border: 1px solid black;
+    box-shadow: none;
+    padding:10px 12px;
+ }
+.btn2{
+    padding: 8px 10px;
+    border: 1px solid lightblue;
+    border-radius: 50%;
+    background: lightblue;
+}
+.btn2:hover{
+    background:white ;
+}
+.contact-infos{
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+}
+.contact-infos li{
+    display: flex;
+    position: relative;
+    padding-bottom: 35px;
+}
+.contact-infos li:last-child{
+    padding-bottom: 0;
+}
+.contact-infos .icon{
+    width: 55px;
+    height: 55px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.contact-infos h5{
+    font-size: 14px;
+    margin: 0 0 5px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.contact-infos p{
+    margin: 0;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+.contact-infos h6{
+    font-size: 14px;
+    color: #fff;
+     font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid lightblue;
+    background-color: black;
+    color: #fff;
+}
+.footer ul{
+    display: inline-flex;
+
+}
+.footer ul li{
+    margin-left: 20px;
+    list-style: none;
+}
+.footer ul li a{
+    color: #fff;
+}
+.footer ul li a:hover{
+    color: blue;
+}
+.footer .nav a{
+    font-size: 20px;
+    color: #fff;
+}
+.footer .nav a:hover{
+    color:lightseagreen;
+}
+.footer .nav a + a{
+    margin-left: 20px;
+}
